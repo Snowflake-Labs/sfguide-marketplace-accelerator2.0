@@ -1,3 +1,16 @@
+/*************************************************************************************************************
+Script:             Marketplace Accelerator 2.0 Account Preparation
+Create Date:        2022-04-21
+Author:             A. Gupta
+Description:        Script contains an example call to stored procedures that prepares your snowflake account.
+                    Requires AccountAdmin Role
+*************************************************************************************************************
+SUMMARY OF CHANGES
+Date(yyyy-mm-dd)    Author                              Comments
+------------------- -------------------                 --------------------------------------------
+2022-04-21          A. Gupta              		        Initial Publish
+*************************************************************************************************************/
+
 --------------------------------------
 -- CALL sp_accountadmin_onetimesetup(): creates a mpadmin warehouse (compute) and mpadmin role with minimum privileges for marketplace admin functions
 --------------------------------------
