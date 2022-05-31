@@ -4,7 +4,7 @@ SETUP CONTINUED (Standard / Custom): START
 
 --------------------------------------
 -- CALL sp_mpadmin_Plisting_addobject
--- Call this SP to add objects for productized listing (final commercial data is presented here)
+-- Call this SP to add objects for productized listing (final commercial data is added here)
 -- Iteratively call this SP to add multpile objects
 --------------------------------------
 use role mpadmin_role;
