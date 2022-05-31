@@ -26,7 +26,7 @@ create or replace table mplisting_SHIPPING.private_basedata.SHIPPING_another_tbl
 
 --------------------------------------
 -- CALL sp_mpadmin_Slisting_addobject 
--- Call this SP to add objects for sample listing when there was a prefix provided to setup sample listing objects
+-- Call this SP to add objects for sample listing 
 -- Iteratively call this SP to add multpile objects
 --------------------------------------
 use role mpadmin_role;
