@@ -1,3 +1,16 @@
+/*************************************************************************************************************
+Script:             Marketplace Accelerator 2.0 Initialization 
+Create Date:        2022-04-21
+Author:             A. Gupta
+Description:        Script installs accelerator toolkit. Execute this file as is 
+		    Requires Accountadmin role
+*************************************************************************************************************
+SUMMARY OF CHANGES
+Date(yyyy-mm-dd)    Author                              Comments
+------------------- -------------------                 --------------------------------------------
+2022-04-21          A. Gupta              		Initial Publish
+*************************************************************************************************************/
+
 /*========================= 
 INIT() STORED PROC: BEGIN 
 =========================*/ 
