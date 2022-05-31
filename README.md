@@ -30,7 +30,7 @@ Contains example call to stored procedure that add procured data to container (s
 
 ### 3-FulfillListing-Unique.sql 
 *Requires MPAdmin Role*  <br />
-contains example call to stored procedure that add procured data to container (shares) delivered to a specific paying consumer of a given data product. <br /> 
+Contains example call to stored procedure that add procured data to container (shares) delivered to a specific paying consumer of a given data product. <br /> 
 **Applies only to data products of Unique category*
 
 ### [Optional] 4-Optional-SpecialCaseHandling.sql 
