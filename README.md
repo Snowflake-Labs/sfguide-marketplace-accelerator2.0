@@ -5,7 +5,8 @@ Accelerator 2.0 aims to speed up launching products on marketplace and go-to-mar
 ![image](https://user-images.githubusercontent.com/68336854/171227875-c6ee5e7b-8ea4-46e5-8134-48eaf918ef40.png)
 
 ## Step2: Choose the blueprint specific to data product category
-![image](https://user-images.githubusercontent.com/68336854/171283446-c2355caf-b9d9-4884-9ad7-ff6ac08aa44a.png)
+![image](https://user-images.githubusercontent.com/68336854/171285125-9d933fac-ff05-4645-a60e-3526a079924a.png)
+
 
 ## Step3: Deploy blueprint using toolkit scripts 
 [Toolkit scripts](https://github.com/sfc-gh-amgupta/sfguide-marketaplace-accelerator2.0/tree/main/ToolkitScripts) are included in this github repository. Also see, included [toolkit process flow diagram](https://github.com/sfc-gh-amgupta/sfguide-marketaplace-accelerator2.0/blob/main/Toolkit%20Process%20Flow%20Diagram.pdf) for reference.
