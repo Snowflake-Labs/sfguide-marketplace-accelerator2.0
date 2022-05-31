@@ -1,3 +1,18 @@
+/*************************************************************************************************************
+Script:             Marketplace Accelerator 2.0 Standard and Custom Products Listing Setup
+Create Date:        2022-04-21
+Author:             A. Gupta
+Description:        Script Contains example call to stored procedure that add procured data to container (shares) 
+                    delivered to paying consumers of a given data product
+                    Requires MPAdmin Role (This role is created by 1-PrepareAccount.sql)
+                    NOTE: Applies only to data products of Standard and Custom category
+*************************************************************************************************************
+SUMMARY OF CHANGES
+Date(yyyy-mm-dd)    Author                              Comments
+------------------- -------------------                 --------------------------------------------
+2022-04-21          A. Gupta              		        Initial Publish
+*************************************************************************************************************/
+
 /*========================= 
 SETUP CONTINUED (Standard / Custom): START
 =========================*/  
