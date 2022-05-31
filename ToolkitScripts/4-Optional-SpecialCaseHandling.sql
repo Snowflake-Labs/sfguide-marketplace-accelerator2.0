@@ -1,3 +1,18 @@
+/*************************************************************************************************************
+Script:             Marketplace Accelerator 2.0 - Optional Special Case Handling
+Create Date:        2022-04-21
+Author:             A. Gupta
+Description:        Script is leveraged when container (database) to store base data, for a given data product, 
+                    is already in its own database. In such case, the existing database can also be used to setup 
+                    listing. This .sql file contains example calls for such setup
+                    Requires Accountadmin and MPAdmin Role (This role is created by 1-PrepareAccount.sql)
+*************************************************************************************************************
+SUMMARY OF CHANGES
+Date(yyyy-mm-dd)    Author                              Comments
+------------------- -------------------                 --------------------------------------------
+2022-04-21          A. Gupta              		        Initial Publish
+*************************************************************************************************************/
+
 /*========================= 
 EXISTING BASEDB OVERRIDE: BEGIN
 This script is used to handle cases when provider already has existing DB in Snowflake to be used for listing as BaseDB
