@@ -1,3 +1,17 @@
+/*************************************************************************************************************
+Script:             Marketplace Accelerator 2.0 Unique Products Listing Fulfillment
+Create Date:        2022-04-21
+Author:             A. Gupta
+Description:        Script contains example call to stored procedure that add procured data to container (shares) 
+                    delivered to a specific paying consumer of a given data product
+                    Requires MPAdmin Role (This role is created by 1-PrepareAccount.sql)
+                    NOTE: Applies only to data products of Unique category
+*************************************************************************************************************
+SUMMARY OF CHANGES
+Date(yyyy-mm-dd)    Author                              Comments
+------------------- -------------------                 --------------------------------------------
+2022-04-21          A. Gupta              		        Initial Publish
+*************************************************************************************************************/
 /*========================= 
 PLISTING FULFILL (UNIQUE): START
 =========================*/  
