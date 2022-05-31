@@ -10,7 +10,32 @@ Accelerator 2.0 aims to speed up launching products on marketplace and go-to-mar
 ![image](https://user-images.githubusercontent.com/68336854/171218630-34e55d17-1792-4524-a4f8-cf9b7b49279a.png)
 
 ## Step3: Deploy blueprint using toolkit scripts 
-Toolkit scripts are included in this github repository. Also see, included toolkit process flow diagram for reference.
+[Toolkit scripts](https://github.com/sfc-gh-amgupta/sfguide-marketaplace-accelerator2.0/tree/main/ToolkitScripts) are included in this github repository. Also see, included [toolkit process flow diagram](https://github.com/sfc-gh-amgupta/sfguide-marketaplace-accelerator2.0/blob/main/Toolkit%20Process%20Flow%20Diagram.pdf) for reference.
+
+
+### 0-init.sql 
+*Requires AccountAdmin Role*  <br />
+Installs toolkit. Execute this file as is.
+
+### 1-PrepareAccount.sql 
+*Requires AccountAdmin Role*  <br />
+Contains an example call to stored procedures that prepares your snowflake account. 
+
+### 2-SetupListing.sql 
+*Requires MPAdmin Role*  <br />
+Contains example call to stored procedures that create containers to store base data and enable adding sample data; for a given data product (listing)
+
+### 2a-SetupListingContd-Standard-Custom.sql 
+*Requires MPAdmin Role*  <br />
+Contains example call to stored procedure that add procured data to container (shares) delivered to paying consumers of a given data product. *Applies only to data products of Standard and Custom category*
+
+### 3-FulfillListing-Unique.sql 
+*Requires MPAdmin Role*  <br />
+contains example call to stored procedure that add procured data to container (shares) delivered to a specific paying consumer of a given data product. *Applies only to data products of Unique category*
+
+### [Optional] 4-Optional-SpecialCaseHandling.sql 
+*Requires AccountAdmin and MPAdmin Role*  <br />
+Script is leveraged when container (database) to store base data, for a given data product, is already in its own database. In such case, the existing database can also be used to setup listing. The .sql file contains example calls for such setup
 
 
 
