@@ -1,11 +1,11 @@
 /*========================= 
-PLISTING FULFILL (Standard): START
+PLISTING FULFILL (Standard / Custom): START
 EXAMPLE USECASE: PAID LISTINGS
 =========================*/  
 
 --------------------------------------
 -- CALL sp_mpadmin_Plisting_addobject
--- Call this SP to add objects for sample listing when there was a prefix provided to setup sample listing objects
+-- Call this SP to add objects for productized listing 
 -- Iteratively call this SP to add multpile objects
 --------------------------------------
 use role mpadmin_role;
@@ -28,7 +28,7 @@ call mpadmin.util.sp_mpadmin_Plisting_addobject_revoke
 -- */   
 
 /*========================= 
-PLISTING FULFILL (Standard): END
+PLISTING FULFILL (Standard / Custom): END
 EXAMPLE USECASE: PAID LISTINGS
 =========================*/ 
 
