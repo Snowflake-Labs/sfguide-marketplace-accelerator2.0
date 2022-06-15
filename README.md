@@ -1,5 +1,5 @@
 # sfguide-marketaplace-accelerator2.0
-Accelerator 2.0 aims to speed up launching products on marketplace and go-to-market globally within hours instead of weeks. It does so by delivering a blueprint and toolkit scripts that deploy the blueprint
+. Accelerator 2.0 is built from past provider learnings and evolved best practices. It aims to speed up launching products on marketplace and go-to-market globally within hours instead of weeks. It does so by delivering a blueprint and toolkit scripts that deploy the blueprint
 
 ## Step1: Determine data product's category
 ![image](https://user-images.githubusercontent.com/68336854/171227875-c6ee5e7b-8ea4-46e5-8134-48eaf918ef40.png)
