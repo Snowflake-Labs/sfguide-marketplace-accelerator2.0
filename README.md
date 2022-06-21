@@ -9,7 +9,7 @@ Accelerator 2.0 is built from past provider learnings and evolved best practices
 
 ## Step3: Deploy blueprint using toolkit scripts 
 [Toolkit scripts](https://github.com/sfc-gh-amgupta/sfguide-marketaplace-accelerator2.0/tree/main/ToolkitScripts) are included in this github repository. <br /> 
-> Reading included [toolkit process flow diagram](https://github.com/sfc-gh-amgupta/sfguide-marketaplace-accelerator2.0/blob/main/Toolkit%20Process%20Flow%20Diagram.pdf) is highly recommended.
+> Highly recommend reviewing [toolkit process flow diagram](https://github.com/sfc-gh-amgupta/sfguide-marketaplace-accelerator2.0/blob/main/Toolkit%20Process%20Flow%20Diagram.pdf) and [toolkit topology diagram](https://github.com/Snowflake-Labs/sfguide-marketaplace-accelerator2.0/blob/main/Toolkit%20Topology%20Diagram.pdf).
 
 
 ### 0-init.sql 
