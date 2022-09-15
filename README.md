@@ -40,10 +40,11 @@ Script is leveraged when container (database) to store base data, for a given da
 
 ### Enforced Best Practices by Toolkit
 1. Materialize objects for sample listings to marginalize replication cost for lead generation. Leverage create-table-as in conjunction with sampling clause 
-2. Set time travel on all objects. 1 day for standard edition, 7 days for higher editions.  Set at database/schema level
-3. Case insensitive object identifiers. Set at database/schema level. Note: ignore case parameter does not work in retrospective
-4. Separation of duties: Create role for marketplace administrator functions while leveraging accountadmin (privileged role) only as needed. 
-5. Develop naming scheme for Private listings and other objects. Example: Include provider name, consumer name,  Product name in private listing name. In  XNYCORP_TO_ABCINC_INVENTORY private listing, XNYCORP is provider name, ABC_INC is consumer name and INVENTORY is product name. This helps with querying usage insights via sql or provider_studio UI
+2. Ensure all shared objects and their dependencies are stored under the same database. E.g. When sharing a secure view ensure all referenced tables in view definition are in same database as secure view. 
+3. Set time travel on all objects. 1 day for standard edition, 7 days for higher editions.  Set at database/schema level
+4. Case insensitive object identifiers. Set at database/schema level. Note: ignore case parameter does not work in retrospective
+5. Separation of duties: Create role for marketplace administrator functions while leveraging accountadmin (privileged role) only as needed. 
+6. Develop naming scheme for Private listings and other objects. Example: Include provider name, consumer name,  Product name in private listing name. In  XNYCORP_TO_ABCINC_INVENTORY private listing, XNYCORP is provider name, ABC_INC is consumer name and INVENTORY is product name. This helps with querying usage insights via sql or provider_studio UI
 
 ### Not Enforced Best Practices by Toolkit (But highly Recommended)
 1. Use private listings for data delivery over direct shares. Private listings enable usage metrics and remote region-cloud auto fulfillment
