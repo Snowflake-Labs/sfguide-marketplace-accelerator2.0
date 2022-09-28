@@ -27,7 +27,7 @@ Contains example call to stored procedures that create containers to store base 
 ### 2a-SetupListingContd-Standard-Custom.sql 
 *Requires MPAdmin Role*  <br />
 Contains example call to stored procedure that add procured data to container (shares) delivered to paying consumers of a given data product.  <br /> 
-**Applies only to data products of Standard and Custom category*
+**Applies only to data products of Standard and Tailored category*
 
 ### 3-FulfillListing-Unique.sql 
 *Requires MPAdmin Role*  <br />
