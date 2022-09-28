@@ -2,10 +2,10 @@
 Accelerator 2.0 is built from past provider learnings and evolved best practices. It aims to speed up launching products on marketplace and go-to-market globally within hours instead of weeks. It does so by delivering a blueprint and toolkit scripts that deploy the blueprint
 
 ## Step1: Determine data product's category
-![image](https://user-images.githubusercontent.com/68336854/171227875-c6ee5e7b-8ea4-46e5-8134-48eaf918ef40.png)
+![image](https://user-images.githubusercontent.com/68336854/192832487-f4944d76-8ce1-4189-a23a-5d3ee68bbd84.png)
 
 ## Step2: Choose the blueprint specific to data product category
-![image](https://user-images.githubusercontent.com/68336854/171285446-d0a18f54-0d93-4398-82fe-a13d1b6f3c57.png)
+![image](https://user-images.githubusercontent.com/68336854/192829999-c23b5cf7-fb96-42a4-8440-a2cd44d4e61d.png)
 
 ## Step3: Deploy blueprint using toolkit scripts 
 [Toolkit scripts](https://github.com/sfc-gh-amgupta/sfguide-marketaplace-accelerator2.0/tree/main/ToolkitScripts) are included in this github repository. <br /> 
@@ -51,6 +51,6 @@ Script is leveraged when container (database) to store base data, for a given da
 1. Use private listings for data delivery over direct shares. Private listings enable usage metrics and remote region-cloud auto fulfillment
 2. Enable change tracking on shared tables and tables under shared views
 3. Add comments on all objects and attributes which serves as data dictionary for consumers
-4. If row access policy for tailored is implemented on large tables (>500G), set clustering key on filtering attributes in the policy
+4. If row access policy for tailored products is implemented on large tables (>500G), set clustering key on filtering attributes in the policy
 
 
