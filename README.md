@@ -20,23 +20,43 @@ Installs toolkit. Execute this file as is.
 *Requires AccountAdmin Role*  <br />
 Contains an example call to stored procedures that prepares your snowflake account. 
 
-### 2-SetupListing.sql 
+### 2a-CreateListingToplogy.sql 
 *Requires MPAdmin Role*  <br />
 Contains example call to stored procedures that create containers to store base data and enable adding sample data; for a given data product (listing)
 
-### 2a-SetupListingContd-Standard-Custom.sql 
+### 2b-LoadBaseData.sql
 *Requires MPAdmin Role*  <br />
-Contains example call to stored procedure that add procured data to container (shares) delivered to paying consumers of a given data product.  <br /> 
-**Applies only to data products of Standard and Tailored category*
+Includes video walk through to load data using excel and from cloud storage alonghwith code examples <br /> 
 
-### 3-FulfillListing-Unique.sql 
+### 2c-PrepareSamples.sql
 *Requires MPAdmin Role*  <br />
-Contains example call to stored procedure that add procured data to container (shares) delivered to a specific paying consumer of a given data product. <br /> 
+Contains example call to stored procedures that prepares sample data and guidance to create public listing of your data product with self-server samples on marketplace <br /> 
+
+### *NOTE: Once above steps are complete - You are ready to capture leads coming from marketplace. Follow "3-Fulfill-xxx" module to train your sales-ops or complete fulfillment for your paying consumers. <br />
+Choose the appropriate "3-Fulfill-xxx" module based on your product category i.e. Standard, Tailored, Unique *
+
+### 3-Fulfill-StandardProduct
+*Requires MPAdmin Role*  <br />
+Contains example call to stored procedure that prepares commercial objects (consumer facing), and delivers them to paying consumers  <br /> 
+**Applies only to data products of Standard category*
+
+### *OR*
+
+### 3-Fulfill-TailoredProduct
+*Requires MPAdmin Role*  <br />
+Contains example call to stored procedure that prepares commercial objects (consumer facing), entitles slice of data (values to pre-defined filters) and delivers them to paying consumers <br /> 
+**Applies only to data products of Tailored category*
+
+### *OR*
+
+### 3-Fulfill-UniqueProduct
+*Requires MPAdmin Role*  <br />
+Contains example call to stored procedure that prepares commercial objects (consumer facing) curated for a specific paying consumer, and delivers curated objects to them <br /> 
 **Applies only to data products of Unique category*
 
-### [Optional] 4-Optional-SpecialCaseHandling.sql 
-*Requires AccountAdmin and MPAdmin Role*  <br />
-Script is leveraged when container (database) to store base data, for a given data product, is already in its own database. In such case, the existing database can also be used to setup listing. The .sql file contains example calls for such setup
+
+## Deployment Best Practices 
+Below are best practices to deploy your data products on marketplace. Toolkit enforces certain best practices, if you decide to use it, and other have to be enforced manually. It is very important to review the best practices and implement them to ensure scale and best experience for customers.
 
 ### Enforced Best Practices by Toolkit
 1. Materialize objects for sample listings to marginalize replication cost for lead generation. Leverage create-table-as in conjunction with sampling clause 
