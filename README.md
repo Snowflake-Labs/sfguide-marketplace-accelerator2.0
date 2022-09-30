@@ -59,7 +59,7 @@ Contains example call to stored procedure that prepares commercial objects (cons
 Below are best practices to deploy your data products on marketplace. Toolkit enforces certain best practices, if you decide to use it, and other have to be enforced manually. It is very important to review the best practices and implement them to ensure scale and best experience for customers.
 
 ### Enforced Best Practices by Toolkit
-1. Use private listings for data delivery over direct shares. Private listings enable usage metrics and remote region-cloud auto fulfillment
+1. Use private listings for data delivery over direct shares. Private listings enable [usage metrics](https://docs.snowflake.com/en/sql-reference/data-sharing-usage.html) and remote cross-cloud auto fulfillment
 2. Materialize objects for sample listings to marginalize replication cost for lead generation. Leverage create-table-as in conjunction with sampling clause 
 3. Ensure all shared objects and their dependencies are co-located under the same database. E.g. When sharing a secure view ensure all referenced tables in view definition are in same database as secure view. _Required for correct functioning of cross-cloud auto-fulfillment_
 4. Set time travel on all objects. 1 day for standard edition, 7 days for higher editions.  Set at database/schema level
