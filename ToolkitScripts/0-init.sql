@@ -73,6 +73,7 @@ create procedure if not exists sp_accountadmin_onetimesetup (PROVIDER_NAME varch
    var grant_command10 = `grant ownership on ALL procedures in schema `+ mp_admin_dbname + `.`+ mp_admin_schemaname + ` to ` + mp_admin_rolename; 
    var grant_command11 = `grant role  `+ mp_admin_rolename+ ` to role accountadmin; --create a role hierarchy with accountadmin`;
    var grant_command12 = `grant create database  on account to `+ mp_admin_rolename;
+   var grant_command13 =  `grant imported privileges on database snowflake to role `+ mp_admin_rolename;
    
    // Create role, warehouse, user  for MarketplaceAdmin
     try {
@@ -133,7 +134,9 @@ create procedure if not exists sp_accountadmin_onetimesetup (PROVIDER_NAME varch
                     snowflake.execute (
                     {sqlText: grant_command12}
                     );   
-   
+                    snowflake.execute (
+                    {sqlText: grant_command13}
+                    );     
                 }
                 
             catch (err)  {
@@ -231,7 +234,7 @@ create procedure if not exists sp_mpadmin_listing_setup (LISTING_NAME varchar(24
     var mp_listing_util_schemaname_qualified = mp_database_name.concat('.').concat(mp_listing_util_schemaname);
     var mp_listing_common_schemaname_qualified = mp_database_name.concat('.').concat(mp_listing_common_schemaname);
     var mp_samplelisting_common_schemaname_qualified = mp_sampledatabase_name.concat('.').concat(mp_samplelisting_common_schemaname);
-    var entitlement_tablename_qualified = mp_listing_util_schemaname_qualified.concat('.ENTITLEMENT');
+    var entitlement_tablename_qualified = mp_listing_util_schemaname_qualified.concat('.ENTITLEMENT_EXAMPLE');
     var entitlement_tablesequence_qualified = mp_listing_util_schemaname_qualified.concat('.SEQ_ENTITLEMENT');
  
     
@@ -251,16 +254,16 @@ create procedure if not exists sp_mpadmin_listing_setup (LISTING_NAME varchar(24
                           consumer_name string not null,
                           consumer_crm_identifier string null, 
                           consumer_snowflake_accountlocator string not null,
-                          consumer_snowflake_accountregion string not null,
-                          entitlement_container_name string not null,
-			 entitlement_container_type string not null default 'SHARE',
+			              entitlement_COLA VARCHAR(100), -- To be edited per the requirement
+                          entitlement_COLB VARCHAR(100), -- To be edited per the requirement
+                          entitlement_COLC VARCHAR(100), -- To be edited per the requirement
                           entitlement_eff_date date default current_date() not null,
-                          entitlement_exp_date date default not null,
+                          entitlement_exp_date date,
                           modified_by string default current_user(),
                           modified_by_role string default current_role(),
                           modified_on_ts timestamp default current_timestamp()
                          ) 
-                           comment = 'Table to store entitlements for the listing'`;
+                           comment = 'Example table to store entitlements for the listing'`;
     
     try {
     

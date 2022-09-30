@@ -30,6 +30,7 @@ drop warehouse if exists mpadmin_wh;
 drop role if exists mpadmin_role;
 -- */
 
+
 --------------------------------------
 -- CALL sp_accountadmin_creatempadminuser(): creates a mpadmin user and assigns to mpadmin role with minimum privileges for marketplace admin functions
 --------------------------------------
@@ -42,5 +43,4 @@ use role accountadmin;
 use warehouse compute_wh; -- If compute_wh does not exist, use any warehouse that accountadmin has access to
 call mpadmin_db.util.sp_accountadmin_creatempadminuser('mpadmin_user1','ThisPasswordIsSecretToNoOne');
                           */
- grant role mpadmin_role to user peter;
---grant role mpadmin_role to user john;
+ grant role mpadmin_role to user john;
