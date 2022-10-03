@@ -2,7 +2,8 @@
 Accelerator 2.0 is built from past provider learnings and evolved best practices. It aims to speed up launching products on marketplace and go-to-market globally within hours instead of weeks. It does so by delivering a blueprint and toolkit scripts that deploy the blueprint
 
 ## Step1: Determine data product's category
-![image](https://user-images.githubusercontent.com/68336854/192832487-f4944d76-8ce1-4189-a23a-5d3ee68bbd84.png)
+![image](https://user-images.githubusercontent.com/68336854/192832487-f4944d76-8ce1-4189-a23a-5d3ee68bbd84.png) <br />
+Determine your category based on whether you are using a standard/common data product and whether this dataset is used as-is by all consumers, filtered (row and/or column) so that each consumer sees a different slice of the main dataset, or customized for each individual consumer.
 
 ## Step2: Choose the blueprint specific to data product category
 ![image](https://user-images.githubusercontent.com/68336854/192829999-c23b5cf7-fb96-42a4-8440-a2cd44d4e61d.png)
@@ -30,7 +31,11 @@ Includes video walk through to load data using excel and from cloud storage alon
 
 ### 2c-PrepareSamples.sql
 *Requires MPAdmin Role*  <br />
-Contains example call to stored procedures that prepares sample data and guidance to create public listing of your data product with self-server samples on marketplace <br /> 
+Contains example call to stored procedures that prepares sample data and guidance to create public listing of your data product with self-serve samples on marketplace <br /> 
+
+Below visual provides most popular sampling rules to prepare samples / evalulation data. You may choose one of the below rule or create your own that suits your needs. Example calls in 2c-PrepareSamples.sql demonstrate Sample(k) records rule to prepare sample data. <br />
+![image](https://user-images.githubusercontent.com/68336854/193669864-79ccf9ac-c08d-471e-a731-6092e6144154.png)
+
 
 ### *NOTE: Once above steps are complete - You are ready to capture leads coming from marketplace. Follow "3-Fulfill-xxx" module to train your sales-ops or complete fulfillment for your paying consumers. <br />
 Choose the appropriate "3-Fulfill-xxx" module based on your product category i.e. Standard, Tailored, Unique *
