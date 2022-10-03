@@ -36,7 +36,7 @@ Includes video walk through to load data using excel and from cloud storage alon
 
 ### 2c-PrepareSamples.sql
 *Requires MPAdmin Role*  <br />
-Contains example call to stored procedures that prepares sample data and guidance to create public listing of your data product with self-serve samples on marketplace. Example calls in 2c-PrepareSamples.sql demonstrate Sample(k) records rule to prepare sample data. If you would like to learn about other rules see section [Step3: Choose sampling rule](https://github.com/Snowflake-Labs/sfguide-marketplace-accelerator2.0/edit/main/README.md#step3-choose-sampling-technique) <br /> 
+Contains example call to stored procedures that prepares sample data and guidance to create public listing of your data product with self-serve samples on marketplace. Example calls in 2c-PrepareSamples.sql demonstrate Sample(k) records rule to prepare sample data. If you would like to learn about other rules see section [Step3: Choose sampling rule](https://github.com/Snowflake-Labs/sfguide-marketplace-accelerator2.0#step3-choose-sampling-rule) <br /> 
 
 
 ### *NOTE: Once above steps are complete - You are ready to capture leads coming from marketplace. Follow "3-Fulfill-xxx" module to train your sales-ops or complete fulfillment for your paying consumers. <br />
