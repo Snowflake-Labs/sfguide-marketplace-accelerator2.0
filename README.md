@@ -8,7 +8,12 @@ Determine your category based on whether you are using a standard/common data pr
 ## Step2: Choose the blueprint specific to data product category
 ![image](https://user-images.githubusercontent.com/68336854/192829999-c23b5cf7-fb96-42a4-8440-a2cd44d4e61d.png)
 
-## Step3: Deploy blueprint using toolkit scripts 
+## Step3: Choose sampling rule
+In this step, choose a rule to sample your data that will be made available with your storefront listing on marketplace. Below visual provides most popular sampling rules to prepare samples / evalulation data. You may choose one of the below rule or create your own that suits your needs. 
+
+![image](https://user-images.githubusercontent.com/68336854/193669864-79ccf9ac-c08d-471e-a731-6092e6144154.png)
+
+## Step4: Deploy blueprint using toolkit scripts 
 [Toolkit scripts](https://github.com/sfc-gh-amgupta/sfguide-marketaplace-accelerator2.0/tree/main/ToolkitScripts) are included in this github repository. <br /> 
 > Highly recommend reviewing [toolkit process flow diagram](https://github.com/sfc-gh-amgupta/sfguide-marketaplace-accelerator2.0/blob/main/Toolkit%20Process%20Flow%20Diagram.pdf) and [toolkit topology diagram](https://github.com/Snowflake-Labs/sfguide-marketaplace-accelerator2.0/blob/main/Toolkit%20Topology%20Diagram.pdf).
 
@@ -31,10 +36,7 @@ Includes video walk through to load data using excel and from cloud storage alon
 
 ### 2c-PrepareSamples.sql
 *Requires MPAdmin Role*  <br />
-Contains example call to stored procedures that prepares sample data and guidance to create public listing of your data product with self-serve samples on marketplace <br /> 
-
-Below visual provides most popular sampling rules to prepare samples / evalulation data. You may choose one of the below rule or create your own that suits your needs. Example calls in 2c-PrepareSamples.sql demonstrate Sample(k) records rule to prepare sample data. <br />
-![image](https://user-images.githubusercontent.com/68336854/193669864-79ccf9ac-c08d-471e-a731-6092e6144154.png)
+Contains example call to stored procedures that prepares sample data and guidance to create public listing of your data product with self-serve samples on marketplace. Example calls in 2c-PrepareSamples.sql demonstrate Sample(k) records rule to prepare sample data. If you would like to learn about other rules see section [Step3: Choose sampling rule](https://github.com/Snowflake-Labs/sfguide-marketplace-accelerator2.0/edit/main/README.md#step3-choose-sampling-technique) <br /> 
 
 
 ### *NOTE: Once above steps are complete - You are ready to capture leads coming from marketplace. Follow "3-Fulfill-xxx" module to train your sales-ops or complete fulfillment for your paying consumers. <br />
