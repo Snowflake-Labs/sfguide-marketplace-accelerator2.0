@@ -6,7 +6,7 @@ Accelerator 2.0 is built from past provider learnings and evolved best practices
 Determine your category based on whether you are using a standard/common data product and whether this dataset is used as-is by all consumers, filtered (row and/or column) so that each consumer sees a different slice of the main dataset, or customized for each individual consumer.
 
 ## Step2: Choose the blueprint specific to data product category
-![image](https://user-images.githubusercontent.com/68336854/192829999-c23b5cf7-fb96-42a4-8440-a2cd44d4e61d.png)
+![image](https://user-images.githubusercontent.com/68336854/194583887-6e83ffcd-65c2-49b4-88f8-e88d0022ab29.png)
 
 ## Step3: Choose sampling rule
 In this step, choose a rule to sample your data that will be made available with your storefront listing on marketplace. Below visual provides most popular sampling rules to prepare samples / evalulation data. You may choose one of the below rule or create your own that suits your needs. 
