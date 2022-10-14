@@ -254,7 +254,8 @@ create procedure if not exists sp_mpadmin_listing_setup (LISTING_NAME varchar(24
                           consumer_name string not null,
                           consumer_crm_identifier string null, 
                           consumer_snowflake_accountlocator string not null,
-			              entitlement_COLA VARCHAR(100), -- To be edited per the requirement
+			  consumer_snowflake_accountregion string not null, -- Important to capture this fielf for cross-region consumers
+			  entitlement_COLA VARCHAR(100), -- To be edited per the requirement
                           entitlement_COLB VARCHAR(100), -- To be edited per the requirement
                           entitlement_COLC VARCHAR(100), -- To be edited per the requirement
                           entitlement_eff_date date default current_date() not null,
