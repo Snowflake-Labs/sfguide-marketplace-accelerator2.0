@@ -11,6 +11,7 @@ SUMMARY OF CHANGES
 Date(yyyy-mm-dd)    Author                              Comments
 ------------------- -------------------                 --------------------------------------------
 2022-04-21          A. Gupta              		        Initial Publish
+2022-10-14          A. Gupta                          Added example to show cross region consumer fulfillment
 *************************************************************************************************************/
 
 /*========================= 
@@ -43,6 +44,7 @@ create or replace row access policy mplisting_INVENTORY.private_util.entitlement
             select 1 from mplisting_INVENTORY.private_util.entitlement_example
               where  ENTITLEMENT_COLA = ENTITLEMENT_COLA_ARG
               and upper(consumer_snowflake_accountlocator) = current_account()
+              and upper(consumer_snowflake_accountregion) = current_region()
               );
                     
 
@@ -124,14 +126,14 @@ select current_account();
 select * from MPLISTING_INVENTORY.SHARED_INVENTORY_COMMON.INVENTORY_ANOTHER;
 select start_station_id, sum(tripduration) from MPLISTING_INVENTORY.SHARED_INVENTORY_COMMON.INVENTORY_MAIN group by start_station_id;
 
-
+-- Insert entries into entitlement table. Request the output of "select current_account(), current_region();" from your consumer to fill in the values for consumer_snowflake_accountlocator and consumer_snowflake_accountregion
 --truncate table mplisting_INVENTORY.private_util.entitlement_example;
-insert into mplisting_INVENTORY.private_util.entitlement_example (consumer_name, consumer_snowflake_accountlocator, entitlement_colA)
-values ('ABC_INC','uda09462',128),
-('ABC_INC','uda09462',323),
-('ABC_INC','uda09462',3374),
-('ABC_INC','uda09462',3272)
-;
+insert into mplisting_INVENTORY.private_util.entitlement_example (consumer_name, consumer_snowflake_accountlocator, consumer_snowflake_accountregion, entitlement_colA)
+values ('ABC_INC','uda09462','PUBLIC.AWS_US_WEST_2',128),
+('ABC_INC','uda09462','PUBLIC.AWS_US_WEST_2',323),
+('ABC_INC','uda09462','PUBLIC.AWS_US_WEST_2',3374),
+('ABC_INC','uda09462','PUBLIC.AWS_US_WEST_2',3272);
+
 
 -- Validation Process. What a given consumer will see
 alter session set SIMULATED_DATA_SHARING_CONSUMER = uda09462;
