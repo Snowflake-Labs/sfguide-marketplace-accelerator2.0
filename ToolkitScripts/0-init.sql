@@ -9,6 +9,8 @@ SUMMARY OF CHANGES
 Date(yyyy-mm-dd)    Author                              Comments
 ------------------- -------------------                 --------------------------------------------
 2022-04-21          A. Gupta              		Initial Publish
+2022-10-14          A. Gupta                         	Update entitlement_example table to include consumer_region 
+							for cross region entitlements
 *************************************************************************************************************/
 
 /*========================= 
