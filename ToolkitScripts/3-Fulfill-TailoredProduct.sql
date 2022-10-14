@@ -11,7 +11,7 @@ SUMMARY OF CHANGES
 Date(yyyy-mm-dd)    Author                              Comments
 ------------------- -------------------                 --------------------------------------------
 2022-04-21          A. Gupta              		        Initial Publish
-2022-10-14          A. Gupta                          Added example to show cross region consumer entitlement
+2022-10-14          A. Gupta                          Added Row access policy example to illustrate cross-region consumer entitlement
 *************************************************************************************************************/
 
 /*========================= 
