@@ -43,4 +43,6 @@ use role accountadmin;
 use warehouse compute_wh; -- If compute_wh does not exist, use any warehouse that accountadmin has access to
 call mpadmin_db.util.sp_accountadmin_creatempadminuser('mpadmin_user1','ThisPasswordIsSecretToNoOne');
                           */
- grant role mpadmin_role to user john;
+                          
+ select current_user();                          
+ grant role mpadmin_role to user john;  -- use output of above command as user
